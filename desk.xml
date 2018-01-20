@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<Scene Ia="0.1" reflection_levels="1" antialiasing_levels="0" transparency_levels="1">
+	<Plane name="P1" xc="200" yc="370" zc="250" nx="0" ny="-1.2" nz="-0.2" />
+	<Plane name="P2" xc="290" yc="60" zc="250" nx="0" ny="1" nz="0.3"/>
+	<Plane name="P3" xc="290" yc="60" zc="250" nx="0" ny="-1" nz="0.3"/>
+	
+	<Texture name="T1" filename="lena.bmp"/>
+	<Texture name="T2" filename="kerrigan.bmp"/>
+	<Texture name="T3" filename="motoko.bmp"/>
+
+	<Light x="-350" y="700.0" z="50" ip="0.1" c1="0.0001" c2="0" c3="0"/>
+	<Light x="0" y="700.0" z="200" ip="0.7" c1="0.0001" c2="0" c3="0"/>
+	<Light x="200" y="330" z="230" ip="0.5" c1="0.0001" c2="0" c3="0"/>
+	
+	<Window xmin="-504" ymin="-100" xmax="504" ymax="467" z="0"/>
+	<Eye x="0" y="420" z="-1000.0"/>
+	
+	<Group name="PantallaBlanca">
+		<Object type="3" r="1" g="1" b="1" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="500" y="0" z="0"/>
+			<Point x="500" y="300" z="0"/>
+			<Point x="0" y="300" z="0"/>
+		</Object>
+		<Object type="3" r="1" g="1" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture="">
+			<Point x="0" y="300" z="0"/>
+			<Point x="500" y="300" z="0"/>
+			<Point x="500" y="300" z="20"/>
+			<Point x="0" y="300" z="20"/>
+		</Object>
+		<Object type="3" r="1" g="1" b="1" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+			<Point x="500" y="0" z="0"/>
+			<Point x="500" y="0" z="20"/>
+			<Point x="500" y="300" z="20"/>
+			<Point x="500" y="300" z="0"/>
+		</Object>
+		<Object type="3" r="1" g="1" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="0" y="0" z="20"/>
+			<Point x="0" y="300" z="20"/>
+			<Point x="0" y="300" z="0"/>
+		</Object>
+	</Group>
+
+	<Group name="RubyCubito">
+		<Object type="3" r="1" g="1" b="0" kd="1.0" ka="1.0" ks="0.9" kn="10" o1="1" o2="0.5" o3="0" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="10" y="0" z="-10"/>
+			<Point x="10" y="20" z="-10"/>
+			<Point x="0" y="20" z="0"/>
+		</Object>
+		<Object type="3" r="1" g="0" b="0" kd="1.0" ka="1.0" ks="0.9" kn="10" o1="1" o2="0.3" o3="0" texture="">
+			<Point x="10" y="0" z="-10"/>
+			<Point x="20" y="0" z="0"/>
+			<Point x="20" y="20" z="0"/>
+			<Point x="10" y="20" z="-10"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="1" kd="1.0" ka="1.0" ks="1" kn="10" o1="1" o2="0.4" o3="0" texture="">
+			<Point x="0" y="20" z="0"/>
+			<Point x="10" y="20" z="-10"/>
+			<Point x="20" y="20" z="0"/>
+			<Point x="10" y="20" z="10"/>
+		</Object>
+	</Group>
+
+	<Group name="Piramide">
+		<Object type="3" r="0" g="0.74902" b="1" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="10" y="20" z="10"/>
+			<Point x="20" y="0" z="0"/>
+		</Object>
+		<Object type="3" r="0" g="0.74902" b="1" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="10" y="20" z="10"/>
+			<Point x="0" y="0" z="20"/>
+		</Object>
+		<Object type="3" r="0" g="0.74902" b="1" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture="">
+			<Point x="20" y="0" z="0"/>
+			<Point x="10" y="20" z="10"/>
+			<Point x="20" y="0" z="20"/>
+		</Object>
+	</Group>
+	<!--
+	<Group name="RubyCubitoNegro">
+		<Object type="3" r="0" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="1" texture="">
+			<Point x="0" y="0" z="0"/>
+			<Point x="20" y="0" z="-20"/>
+			<Point x="20" y="40" z="-20"/>
+			<Point x="0" y="40" z="0"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="1" texture="">
+			<Point x="20" y="0" z="-20"/>
+			<Point x="40" y="0" z="0"/>
+			<Point x="40" y="40" z="0"/>
+			<Point x="20" y="40" z="-20"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="1" texture="">
+			<Point x="0" y="40" z="0"/>
+			<Point x="20" y="40" z="-20"/>
+			<Point x="40" y="40" z="0"/>
+			<Point x="20" y="40" z="20"/>
+		</Object>
+	</Group>
+	-->
+
+
+	<!-- Axis -->
+	<!--
+	<Object type="1" xc="0" yc="0" zc="0" radio="3" qx="0" qy="1" qz="0" d1="-INF" d2="+INF" r="0" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" texture=""/>
+	<Object type="1" xc="0" yc="0" zc="0" radio="3" qx="0" qy="0" qz="-1" d1="-INF" d2="+INF" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" texture=""/>
+	-->
+
+	
+
+	<!--Bola-->
+	<Object type="0" xc="400" yc="60" zc="120" radio="60" r="1" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0.7" o3="0" texture="">
+	</Object>
+	<Object type="0" xc="400" yc="60" zc="120" radio="60" r="1" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0.7" o3="0" texture="">
+		<Plane from="P2"/>
+	</Object>
+	
+
+	<!--
+	<Object type="0" xc="-150" yc="25" zc="250" radio="25" r="1" g="0" b="0.64" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="1" texture="">
+	</Object>
+	-->
+	
+	<!--Envase lapices-->
+	<Object type="1" xc="150" yc="30" zc="300" radio="40" qx="0" qy="1" qz="0" d1="-30" d2="40" r="0.490196" g="0.619608" b="0.752941" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0.2" o3="0" texture=""/>
+	
+	<Object type="1" xc="150" yc="140" zc="300" radio="6" qx="0.01" qy="1" qz="0.1" d1="-100" d2="-20" r="1" g="1" b="0" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="2" xc="150" yc="140" zc="300" distance="20" radio="6" qx="0.01" qy="1" qz="0.1" d1="-20" d2="0" r="0" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="2" xc="150" yc="140" zc="300" distance="20" radio="6.1" qx="0.01" qy="1" qz="0.1" d1="-20" d2="-8" r="1" g="0.411765" b="0.705882" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture=""/>
+
+	<Object type="1" xc="140" yc="0" zc="300" radio="6" qx="-0.25" qy="1" qz="0.5" d1="0" d2="120" r="1" g="0" b="0" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="160" yc="0" zc="300" radio="6" qx="0.25" qy="1" qz="0.5" d1="0" d2="120" r="1" g="0" b="0.54" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+
+	<!-- Lampara -->
+	<Object type="4" xc="400" yc="1" zc="300" radio1="10" radio2="90" nx="0" ny="1" nz="0" r="0.498039" g="1" b="0" kd="0.9" ka="0.7" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="2" xc="400" yc="200" zc="300" distance="30" radio="10" qx="0" qy="1" qz="0" d1="-200" d2="-80" r="0.498039" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="0" xc="400" yc="130" zc="300" radio="30" r="0.498039" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="400" yc="150" zc="300" radio="10" qx="0" qy="1" qz="0" d1="0" d2="400" r="0.411765" g="0.411765" b="0.411765" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="200" yc="370" zc="250" radio="10" qx="1" qy="1" qz="1.5" d1="0" d2="400" r="0.411765" g="0.411765" b="0.411765" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="0" xc="200" yc="350" zc="250" radio="100" r="0.498039" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture="">
+		<Plane from="P1"/>
+	</Object>
+	<Object type="0" xc="200" yc="370" zc="250" radio="30" r="1" g="1" b="0" kd="1" ka="1.0" ks="1" kn="1" o1="1" o2="0" o3="0" texture=""/>
+
+	<!-- Pared -->
+	<Object type="3" r="0.254902" g="0.411765" b="0.882353" kd="0.4" ka="0.5" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-1200" y="-600" z="600"/>
+		<Point x="1000" y="-600" z="600"/>
+		<Point x="1000" y="700" z="600"/>
+		<Point x="-1200" y="700" z="600"/>
+	</Object>
+	<!--Caja-->
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.3" ks="0.9" kn="1" o1="1" o2="0.01" o3="0.1" texture="">
+		<Point x="-400" y="0" z="350"/>
+		<Point x="-200" y="0" z="350"/>
+		<Point x="-200" y="100" z="350"/>
+		<Point x="-400" y="100" z="350"/>
+	</Object>
+	<Object type="3" r="0.839216" g="0.839216" b="0.839216" kd="1" ka="0.3" ks="0.9" kn="1" o1="1" o2="0.01" o3="0.01" texture="">
+		<Point x="-400" y="0" z="100"/>
+		<Point x="-200" y="0" z="100"/>
+		<Point x="-200" y="100" z="100"/>
+		<Point x="-400" y="100" z="100"/>
+	</Object>
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.3" ks="0.9" kn="1" o1="1" o2="0.01" o3="0.1" texture="">
+		<Point x="-400" y="0" z="100"/>
+		<Point x="-400" y="0" z="350"/>
+		<Point x="-400" y="100" z="350"/>
+		<Point x="-400" y="100" z="100"/>
+	</Object>
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.3" ks="0.9" kn="1" o1="1" o2="0.01" o3="0.1" texture="">
+		<Point x="-200" y="0" z="100"/>
+		<Point x="-200" y="0" z="350"/>
+		<Point x="-200" y="100" z="350"/>
+		<Point x="-200" y="100" z="100"/>
+	</Object>
+	<Object type="0" xc="-322" yc="52" zc="145" radio="40" r="0.25098" g="0.878431" b="0.815686" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0.1" o3="0" texture=""/>
+	<Object type="0" xc="-252" yc="52" zc="152" radio="50" r="1" g="0" b="0.64" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0.1" o3="0" texture=""/>
+	<Object type="0" xc="-272" yc="52" zc="222" radio="60" r="0.960784" g="0.960784" b="0.960784" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0.3" o3="0.1" texture=""/>
+
+	<!--Papeles y libros-->
+	<!--
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.3" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-400" y="1" z="200"/>
+		<Point x="-320" y="1" z="200"/>
+		<Point x="-320" y="1" z="100"/>
+		<Point x="-400" y="1" z="100"/>
+	</Object>
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.6" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="T1">
+		<Point x="-360" y="2" z="220"/>
+		<Point x="-280" y="2" z="220"/>
+		<Point x="-280" y="2" z="120"/>
+		<Point x="-360" y="2" z="120"/>
+	</Object>
+	<Object type="3" r="1" g="1" b="1" kd="1" ka="0.6" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-260" y="2" z="240"/>
+		<Point x="-180" y="2" z="240"/>
+		<Point x="-180" y="2" z="140"/>
+		<Point x="-260" y="2" z="140"/>
+	</Object>
+	<Object type="3" r="0" g="0.74902" b="1" kd="1" ka="0.6" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-300" y="1" z="200"/>
+		<Point x="-220" y="1" z="200"/>
+		<Point x="-300" y="1" z="100"/>
+		<Point x="-220" y="1" z="100"/>
+	</Object>
+	-->
+	<Object type="1" xc="-100" yc="3" zc="150" radio="6" qx="-100" qy="3" qz="120" d1="-100" d2="-20" r="1" g="1" b="0" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="-100" yc="3" zc="150" radio="6" qx="-100" qy="3" qz="120" d1="-120" d2="-20" r="1" g="0" b="0" kd="0.9" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="2" xc="-100" yc="3" zc="150" distance="20" radio="6" qx="-100" qy="3" qz="120" d1="-20" d2="0" r="0" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="2" xc="-100" yc="3" zc="150" distance="20" radio="6" qx="-100" qy="3" qz="120" d1="-20" d2="-8" r="1" g="0.411765" b="0.705882" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="4" xc="-90" yc="3" zc="130" radio1="6" radio2="6" nx="-100" ny="3" nz="120" r="0.980392" g="0.921569" b="0.843137" kd="0.9" ka="0.7" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	
+	<!--Escritorio-->
+	<Object type="1" xc="0" yc="0" zc="-5" radio="5" qx="1" qy="0" qz="0" d1="-500" d2="500" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="-500" yc="0" zc="0" radio="5" qx="0" qy="0" qz="1" d1="0" d2="400" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="-500" yc="0" zc="400" radio="5" qx="1" qy="0" qz="0" d1="0" d2="1000" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="500" yc="0" zc="0" radio="5" qx="0" qy="0" qz="1" d1="0" d2="400" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.9" kn="1" o1="1" o2="0.3" o3="0" texture="">
+		<Point x="-500" y="0" z="0"/>
+		<Point x="500" y="0" z="0"/>
+		<Point x="500" y="0" z="400"/>
+		<Point x="-500" y="0" z="400"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-500" y="0" z="0"/>
+		<Point x="500" y="0" z="0"/>
+		<Point x="500" y="-50" z="0"/>
+		<Point x="-500" y="-50" z="0"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-500" y="0" z="0"/>
+		<Point x="-450" y="0" z="0"/>
+		<Point x="-450" y="-400" z="0"/>
+		<Point x="-500" y="-400" z="0"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.9" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-450" y="0" z="0"/>
+		<Point x="-450" y="0" z="50"/>
+		<Point x="-450" y="-400" z="50"/>
+		<Point x="-450" y="-400" z="0"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.02" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="450" y="0" z="0"/>
+		<Point x="500" y="0" z="0"/>
+		<Point x="500" y="-400" z="0"/>
+		<Point x="450" y="-400" z="0"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.3" ks="0.02" kn="1" o1="1" o2="0" o3="0" texture="">
+		<Point x="-450" y="0" z="0"/>
+		<Point x="-450" y="0" z="50"/>
+		<Point x="-450" y="-400" z="50"/>
+		<Point x="-450" y="-400" z="0"/>
+	</Object>
+	<!--Pantalla-->
+	<!--
+	<Object type="3" r="0" g="0" b="0" kd="0.9" ka="0.9" ks="0.9" kn="10" o1="1" o2="0.01" o3="0" texture="">
+		<Point x="-570" y="50" z="329"/>
+		<Point x="-30" y="50" z="329"/>
+		<Point x="-30" y="350" z="329"/>
+		<Point x="-570" y="350" z="329"/>
+	</Object>
+	<Copy from="PantallaBlanca"  movex="-600" movey="10" movez="330" scalex="1.2" scaley="1.2" scalez="1" />
+	<Object type="0" xc="-20" yc="30" zc="335" radio="10" r="1" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="0" xc="-50" yc="30" zc="335" radio="10" r="0" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="4" xc="-300" yc="10" zc="340" radio1="2" radio2="70" nx="0" ny="1" nz="0" r="1" g="1" b="1" kd="0.9" ka="0.7" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	<Object type="1" xc="-300" yc="1" zc="340" radio="70" qx="0" qy="1" qz="0" d1="0" d2="10" r="1" g="1" b="1" kd="0.9" ka="1" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+	-->
+	<!--
+	<Copy from="Piramide"  movex="-100" movey="0" movez="150" scalex="4" scaley="4" scalez="4" />
+	-->
+
+	<!-- Cubo Ruby-->
+	<Copy from="RubyCubito"  movex="0" movey="0" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="11" movey="0" movez="189" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="0" movez="178" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="0" movey="21" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="11" movey="21" movez="189" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="21" movez="178" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="0" movey="42" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="11" movey="42" movez="189" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="42" movez="178" scalex="1" scaley="1" scalez="1" />
+
+	
+	<Copy from="RubyCubito"  movex="11" movey="0" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="0" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="0" movez="189" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="11" movey="21" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="21" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="21" movez="189" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="11" movey="42" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="42" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="42" movez="189" scalex="1" scaley="1" scalez="1" />
+
+	<Copy from="RubyCubito"  movex="22" movey="0" movez="222" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="0" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="44" movey="0" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="21" movez="222" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="21" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="44" movey="21" movez="200" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="22" movey="42" movez="222" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="33" movey="42" movez="211" scalex="1" scaley="1" scalez="1" />
+	<Copy from="RubyCubito"  movex="44" movey="42" movez="200" scalex="1" scaley="1" scalez="1" />
+
+
+
+	<!-- Cuadro-->
+	<Copy from="PantallaBlanca"  movex="135" movey="15" movez="590" scalex="0.85" scaley="1.5" scalez="1" />
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.1" ks="0" kn="1" o1="1" o2="0" o3="0" texture="T2">
+		<Point x="150" y="30" z="589"/>
+		<Point x="550" y="30" z="589"/>
+		<Point x="550" y="450" z="589"/>
+		<Point x="150" y="450" z="589"/>
+	</Object>
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.1" ka="0.5" ks="0.02" kn="100" o1="0.1" o2="0.2" o3="0.9" texture="">
+		<Point x="150" y="30" z="589"/>
+		<Point x="550" y="30" z="589"/>
+		<Point x="550" y="450" z="589"/>
+		<Point x="150" y="450" z="589"/>
+	</Object>
+
+
+
+	<Copy from="PantallaBlanca"  movex="-715" movey="65" movez="590" scalex="1.35" scaley="1.23" scalez="1" />
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.9" ka="0.1" ks="0" kn="1" o1="1" o2="0.3" o3="0" texture="T3">
+		<Point x="-700" y="80" z="589"/>
+		<Point x="-50" y="80" z="589"/>
+		<Point x="-50" y="420" z="589"/>
+		<Point x="-700" y="420" z="589"/>
+	</Object>
+	<!--
+	<Object type="3" r="0.545098" g="0.270588" b="0.0745098" kd="0.1" ka="0.5" ks="0.02" kn="100" o1="0.1" o2="0.2" o3="0.9" texture="">
+		<Point x="-700" y="80" z="589"/>
+		<Point x="-50" y="80" z="589"/>
+		<Point x="-50" y="420" z="589"/>
+		<Point x="-700" y="420" z="589"/>
+	</Object>
+	-->
+
+</Scene>
+

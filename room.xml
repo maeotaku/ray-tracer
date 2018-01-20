@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<Scene Ia="0.1" reflection_levels="2" antialiasing_levels="0" transparency_levels="1">
+	<Plane name="P1" xc="0" yc="100" zc="0" nx="0" ny="1" nz="-0.8"/>
+<!--
+	<Texture name="T1" filename="lena.bmp"/>
+-->
+	<Texture name="T2" filename="kerrigan.bmp"/>
+
+	<Light x="500" y="200.0" z="0" ip="1.0" c1="0.01" c2="0" c3="0"/>
+	<Light x="00" y="500" z="500" ip="1.0" c1="0.01" c2="0" c3="0"/>
+
+	<Window xmin="0" ymin="0" xmax="1008" ymax="567" z="0"/>
+	<Eye x="504" y="300" z="-4000.0"/>
+
+	<!--
+	<Object type="1" xc="0" yc="0" zc="0" radio="3" qx="1" qy="0" qz="0" d1="-INF" d2="+INF" r="1" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.3" o2="0.3" o3="0" texture=""/>
+	<Object type="1" xc="0" yc="0" zc="0" radio="3" qx="0" qy="1" qz="0" d1="-INF" d2="+INF" r="0" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.3" o2="0.3" o3="0" texture=""/>
+	<Object type="1" xc="0" yc="0" zc="0" radio="3" qx="0" qy="0" qz="-1" d1="-INF" d2="+INF" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.3" o2="0.3" o3="0" texture=""/>
+	
+
+	
+
+	<Object type="0" xc="0" yc="80" zc="1000" radio="100" r="1" g="0" b="0" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="0" texture=""/>
+
+	<Object type="0" xc="0" yc="80" zc="150" radio="100" r="1" g="1" b="0" kd="0.9" ka="1.0" ks="0.9" kn="100" o1="1" o2="0" o3="1" texture=""/>
+	-->
+	<!--Spheres-->
+	<Object type="0" xc="200" yc="100" zc="150" radio="70" r="0.3" g="1" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.9" o2="0.3" o3="0" texture="">
+		
+	</Object>
+	<!-- Cylinders -->
+	<!--
+	<Object type="1" xc="-300" yc="250" zc="100" radio="50" qx="1" qy="-1" qz="0" d1="-100" d2="100" r="0" g="1" b="0.2" kd="1" ka="1" ks="0.9" kn="10" o1="1" o2="0" o3="0" texture=""/>	
+	-->
+	<!-- Cones -->
+	<!--
+	<Object type="2" xc="100" yc="150" zc="300" distance="50" radio="10" qx="0" qy="1" qz="0.4" d1="10" d2="200" r="1" g="0.5" b="0" kd="0.1" ka="0.4" ks="0.9" kn="10" o1="1" o2="0.1" o3="0" texture=""/>
+	-->
+
+	<!--Polygons-->
+	<Object type="3" r="1" g="0" b="0" kd="1" ka="1" ks="1" kn="100" o1="1" o2="0" o3="0" texture="T2">
+		<Point x="0" y="0" z="-1500"/>
+		<Point x="1008" y="0" z="-1500"/>
+		<Point x="1008" y="567" z="-1500"/>
+		<Point x="0" y="567" z="-1500"/>
+	</Object>
+	<Object type="3" r="1" g="0" b="0" kd="1" ka="1" ks="1" kn="100" o1="1" o2="0" o3="0" texture="T2">
+		<Point x="0" y="0" z="1500"/>
+		<Point x="1008" y="0" z="1500"/>
+		<Point x="1008" y="567" z="1500"/>
+		<Point x="0" y="567" z="1500"/>
+	</Object>
+	<Object type="3" r="1" g="0" b="0" kd="1" ka="1" ks="1" kn="100" o1="1" o2="0" o3="0" texture="T2">
+		<Point x="0" y="0" z="0"/>
+		<Point x="0" y="0" z="1500"/>
+		<Point x="0" y="567" z="1500"/>
+		<Point x="0" y="567" z="0"/>
+	</Object>
+	<Object type="3" r="1" g="0" b="0" kd="1" ka="1" ks="1" kn="100" o1="1" o2="0" o3="0" texture="">
+		<Point x="1008" y="0" z="0"/>
+		<Point x="1008" y="0" z="1500"/>
+		<Point x="1008" y="567" z="1500"/>
+		<Point x="1008" y="567" z="0"/>
+	</Object>
+	<Object type="3" r="1" g="0" b="0" kd="1" ka="1" ks="1" kn="100" o1="1" o2="0" o3="0" texture="">
+		<Point x="0" y="567" z="0"/>
+		<Point x="0" y="567" z="1500"/>
+		<Point x="1008" y="567" z="1500"/>
+		<Point x="1008" y="567" z="0"/>
+	</Object>
+	
+	<!-- Disks 
+	<Object type="4" xc="0" yc="400" zc="0" radio1="50" radio2="100" nx="0" ny="1" nz="-0.8" r="0" g="1" b="0" kd="0.9" ka="0.1" ks="0.9" kn="100" o1="0.3" o2="0.3" o3="0.3"/>
+
+	<Group name="Cubo">
+		<Object type="3" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="0.3" o2="0.3" o3="0.3">
+			<Point x="0" y="0" z="0"/>
+			<Point x="100" y="0" z="0"/>
+			<Point x="100" y="100" z="0"/>
+			<Point x="0" y="100" z="0"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.3" o2="0.3" o3="0.3">
+			<Point x="0" y="100" z="0"/>
+			<Point x="100" y="100" z="0"/>
+			<Point x="100" y="100" z="100"/>
+			<Point x="0" y="100" z="100"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="1" o1="0.3" o2="0.3" o3="0.3">
+			<Point x="100" y="0" z="0"/>
+			<Point x="100" y="0" z="100"/>
+			<Point x="100" y="100" z="100"/>
+			<Point x="100" y="100" z="0"/>
+		</Object>
+		<Object type="3" r="0" g="0" b="1" kd="0.9" ka="1.0" ks="0.9" kn="10" o1="0.3" o2="0.3" o3="0.3">
+			<Point x="0" y="0" z="0"/>
+			<Point x="0" y="0" z="100"/>
+			<Point x="0" y="100" z="100"/>
+			<Point x="0" y="100" z="0"/>
+		</Object>
+	</Group>
+
+
+	<Copy from="Cubo"  movex="-500" movey="0" movez="100" scalex="1" scaley="1" scalez="10" />
+	<Copy from="Cubo"  movex="500" movey="0" movez="100" scalex="1" scaley="1" scalez="10"/>
+	-->
+
+</Scene>
+
